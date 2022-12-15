@@ -1,4 +1,4 @@
-package arrayexam
+package _array
 
 fun main() {
     var intArr = arrayOf(1,2,3,4) // 배열 선언

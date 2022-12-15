@@ -1,4 +1,4 @@
-package classexam
+package _class
 
 fun main() {
 
