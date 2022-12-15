@@ -1,4 +1,4 @@
-package functionexam
+package function
 
 fun main() {
     val addValue = add(1, 2, 3)
