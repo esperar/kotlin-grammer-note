@@ -1,4 +1,4 @@
-package override
+package _override
 
 fun main() {
     var a = Tiger();

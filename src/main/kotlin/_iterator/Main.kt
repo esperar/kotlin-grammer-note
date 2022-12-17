@@ -1,4 +1,4 @@
-package iterator
+package _iterator
 
 fun main() {
     var a = 0

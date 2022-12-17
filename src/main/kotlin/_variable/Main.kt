@@ -1,4 +1,4 @@
-package variable
+package _variable
 
 fun main() {
     var a:Int = 1
