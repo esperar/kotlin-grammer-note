@@ -1,4 +1,4 @@
-package conditional
+package _conditional
 
 fun main() {
     var a: Int = 10;

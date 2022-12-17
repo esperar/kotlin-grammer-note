@@ -1,4 +1,4 @@
-package typeconvert
+package _typeconvert
 
 fun main() {
     var a: Int = 1234
