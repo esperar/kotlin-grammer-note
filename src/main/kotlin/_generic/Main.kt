@@ -4,6 +4,12 @@ fun main() {
     UsingGeneric(A()).doShouting()
     UsingGeneric(B()).doShouting()
     UsingGeneric(C()).doShouting()
+
+    doShouting(B())
+}
+
+fun<T : A> doShouting(t: T) {
+    t.shout()
 }
 
 open class A {
