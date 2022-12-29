@@ -1,4 +1,4 @@
-package `_\function`
+package `_function`
 
 fun main() {
     val addValue = add(1, 2, 3)
