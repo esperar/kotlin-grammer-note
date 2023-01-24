@@ -26,3 +26,4 @@
 - ✅ 중첩클래스와 내부클래스
 - ✅ Data class, Enum class
 - ✅ Set, Map
+- ✅ Collection Method
