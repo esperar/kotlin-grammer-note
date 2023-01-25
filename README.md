@@ -1,7 +1,6 @@
 ### Kotlin 정복합니다.
 
 - ✅ 변수
-
 - ✅ 타입 변환
 - ✅ 배열
 - ✅ 함수 사용
@@ -28,3 +27,4 @@
 - ✅ Set, Map
 - ✅ Collection Method
 - ✅ 변수의 고급 기술. 상수, lateinit, lazy
+- ✅ 비트 연산
