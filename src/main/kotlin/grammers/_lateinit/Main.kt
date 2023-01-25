@@ -1,4 +1,4 @@
-package grammers._lateint
+package grammers._lateinit
 
 fun main() {
 

@@ -27,3 +27,4 @@
 - ✅ Data class, Enum class
 - ✅ Set, Map
 - ✅ Collection Method
+- ✅ 변수의 고급 기술. 상수, lateinit, lazy
