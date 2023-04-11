@@ -1,30 +1,26 @@
 package in_action.supports
 
 import java.beans.PropertyChangeSupport
+import kotlin.reflect.KProperty
 
 class ObservableProperty(
-    val propName: String, var propValue: Int,
+    var propValue: Int,
     val changeSupport: PropertyChangeSupport
 ) {
-    fun getValue() : Int = propValue
-    fun setValue(newValue: Int){
+    operator fun getValue(p: Person, prop: KProperty<*>) : Int = propValue
+    operator fun setValue(p: Person, prop: KProperty<*>, newValue: Int){
         val oldValue = propValue
         propValue = newValue
-        changeSupport.firePropertyChange(propName, oldValue, newValue)
+        changeSupport.firePropertyChange(prop.name, oldValue, newValue)
     }
+
+
 
 }
 
 class Person(
     val name: String, age: Int, salary: Int
 ) : PropertyChangeAware(){
-    val _age = ObservableProperty("age", age, changeSupport)
-    var age: Int
-        get() = _age.getValue()
-        set(value) { _age.setValue(value) }
-
-    val _salary = ObservableProperty("salary", salary, changeSupport)
-    var salary: Int
-        get() = _salary.getValue()
-        set(value) { _salary.setValue(value) }
+    var age: Int by ObservableProperty(age, changeSupport)
+    var salary: Int by ObservableProperty(salary, changeSupport)
 }
